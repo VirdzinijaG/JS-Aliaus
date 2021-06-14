@@ -120,7 +120,7 @@ if (0 > sk2 | sk2 > 9) {
 
  var i = nuo;
 
- while (i <= iki) { // 2 maziau uz4 true vykdo bloka
+ while (i <= iki) { // 2 maziau uz 4 true vykdo bloka
      var j = nuo;  
      while (j <= iki) { // ciklas cikle, sukasi kol pasiekia false ir gryzta i pirma while
          console.log(i * j); // 2*2=4 2*3=6 2*4=8     3*2=6  3*3=9 3*4=12   4*2=8  4*3=12  4*4=16

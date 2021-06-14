@@ -23,18 +23,26 @@ while (skaicius <= 100) {
 
  // atspausdinti visus pirminius skaicius intervale nuo 2 iki 100 / skaicius kuris dalinasi tik iš savęs ir vieneto.
 
-var skaicius1 = 2;
-if (skaicius1 <= 100) {
-    if (skaicius1 % 2 == 0 ){
-        
-        console.log(skaicius1);
-    }
-    if (skaicius1 % 3 == 0 ) {
-console.log(skaicius1)
-    }
-    skaicius1 = skaicius1 + 1;
+ var nuo = 2;
+ var iki = 100;
+ var dd = 2;
+ var tt = 3;
+ var pp = 5;
+ var ss = 7;
+ var cz = ss + 1;
+ console.log(dd);
+ console.log(tt);
+ console.log(pp);
+ console.log(ss);
+ while (cz <= 100) {
+     if(cz / cz === 1 && cz % dd !== 0 && cz % tt !== 0 && cz % pp !== 0 && cz % ss !== 0) {
+         console.log(cz);
+     }
+        cz = cz + 1;
+ }
+ console.log("pabaiga");
+   
 
-}
 
 
 
