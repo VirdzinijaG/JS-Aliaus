@@ -1,6 +1,7 @@
 "use strict"
 
 // operatorius ++, prideda per viena, labai panasus i +=1
+// operatorius --, atima per viena
 
 var sk = 3;
 var kitas = 5 + sk++;
@@ -24,7 +25,29 @@ console.log(sk);
 console.log(kitas);
 console.log(kitas1);
 
+var i = 1;
 
+while (i <3) {
+    console.log(i++);
+    //          paimam reiksme i 1 ir atsimena
+    //          padidinam i vienetu -> 2
+    //          spausdinama reiksme 1 nes ja atsimena
+}
+
+var d = 1;
+while (d <3) {
+    console.log(++d);
+    //           padidinam reiksme i -> 2
+    //           spausdinama reiksme 2
+}
+
+
+
+var n = 3;
+
+while (n > 0) {
+    console.log(--n);
+}
 
 
 
