@@ -71,3 +71,14 @@ var kitas2 = 10 - ++ski + ski++ - ++ski;
 
 
 console.log(kitas2);
+
+
+// Ciklas for 
+
+// pirma dalis visada bus ivykdoma s=1
+// antra dalis jei true tada vykdo trecia dali spausdina reiksme s 
+// tada vkdoma ketvirta dalis s padidinamas 1
+for (var s = 1; s < 4; s++){
+    console.log(s);
+
+}
