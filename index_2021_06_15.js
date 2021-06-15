@@ -1,4 +1,4 @@
-"use strict"
+"use strict" 
 
 // operatorius ++, prideda per viena, labai panasus i +=1
 // operatorius --, atima per viena
@@ -82,3 +82,26 @@ for (var s = 1; s < 4; s++){
     console.log(s);
 
 }
+
+
+/* UZDUOTIS
+ var nuo = 1;
+ var iki = 5;
+daugybos lenetele su ciklais for */
+
+/*  2UZDUOTIS
+su ciklu for atspausdinti skaicius nuo 100 iki 1 kas 3
+turi atspausdinti 100 97 94 91 ir t.t.
+*/
+
+
+
+// Kintamieji
+// kintanaji deklaruojam su var
+// kintamuju deklaravimas yra hoistinimas - perbega ir paziuri ar yra var, tada juos deklaruoja
+
+console.log(skai); // meta undefined, nes reiksmes dar nerado/ vykdo programa nuo virsaus i apacia
+
+var skai = 10;
+
+console.log(skai); // cia jau atspausdino 10, nes priskirtas var skai = 10
