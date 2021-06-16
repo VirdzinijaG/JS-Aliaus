@@ -51,6 +51,14 @@ while (n > 0) {
     //          spausdinama reiksme 2                 //  spausdinama reiksme 1       // spausdinama reiksme 0
 }
 
+var m = 3;
+while (m > 0) {
+    console.log(m--);
+    //          paimama reiksme 3 ir atsimenama         // paimama reiksme 2          // paimama reiksme 1
+    //          sumazinama reiksme vienetu 3 -> 2       // sumazinama reiksme 2 -> 1 // sumazinama reiksme 1 -> 0
+    //          spausdinama reiksme 3, nes ji atsiminta // spausdinama 2             // spausdinama 1
+}
+
 
 
 
