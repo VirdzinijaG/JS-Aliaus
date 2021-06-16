@@ -23,7 +23,7 @@ var a = 1;
 do {
     var b = 1;
     do {
-        console.log(a*b);
+        console.log(a, b, a*b);
         b+= 1;
     } while (b <= 3);
     a+= 1;
