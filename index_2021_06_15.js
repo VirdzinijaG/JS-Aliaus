@@ -29,16 +29,16 @@ var i = 1;
 
 while (i <3) {
     console.log(i++);
-    //          paimam reiksme i 1 ir atsimena
-    //          padidinam i vienetu -> 2
-    //          spausdinama reiksme 1 nes ja atsimena
+    //          paimam reiksme i 1 ir atsimena     // paimama reiksme 2 i = 2 nes padidintas ir atsimena
+    //          padidinam i vienetu -> 2          //  padiddinam 2 -> 3
+    //          spausdinama reiksme 1 nes ja atsimena // spausdinama atsiminta reiksme 2
 }
 
 var d = 1;
 while (d <3) {
     console.log(++d);
-    //           padidinam reiksme i -> 2
-    //           spausdinama reiksme 2
+    //           padidinam reiksme i -> 2  // padiddinama reiksme 2 -> 3
+    //           spausdinama reiksme 2    // spausdinama reiksme 2
 }
 
 
@@ -47,6 +47,8 @@ var n = 3;
 
 while (n > 0) {
     console.log(--n);
+    //          pamazinama reiksme 3 vienetu 3 -> 2   //  pamazinama reiksme 2 -> 1   // pamazinama reiksme 1 -> 0
+    //          spausdinama reiksme 2                 //  spausdinama reiksme 1       // spausdinama reiksme 0
 }
 
 
