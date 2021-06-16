@@ -2,7 +2,7 @@
 
 // let
 // const 
-// let ir const kintamieji nera hoistinami ir atsiranda tik tada, kai ateina ju laikas\
+// let ir const kintamieji nera hoistinami ir atsiranda tik tada, kai ateina ju laikas
 // var kintamasis yra hoistinamas ir iskart deklaruojamas pagrindiniame skaupe
 
 let naujas = 2;
@@ -55,8 +55,9 @@ console.log(i);
 // jei let a = 1 butu virs do tada atliks
 
 for (let c = 1; c < 3; c++){
-    let c = 7;
+    let c = 7; // su sia reiksme atspausdins du kartus 35, nes naudos tik 7*5 du kartus 
     let d = 5;
     console.log(c * d);
 }
-// ciklas for turi savo skaupa
+//console.log(c); sitoje vietoje neatspausdins, parodys klaida, kad nerastas c, nes c reiksme yra kitame skaupe ir jo neranda
+// for ciklas for turi savo skaupa
