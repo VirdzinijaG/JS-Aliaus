@@ -15,3 +15,16 @@ while (i <= iki) {
     }
     i = i + 1;
 }
+
+// dar kitas variantas
+
+var a = 1;
+
+do {
+    var b = 1;
+    do {
+        console.log(a*b);
+        b+= 1;
+    } while (b <= 3);
+    a+= 1;
+} while (a <= 3);
