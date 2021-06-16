@@ -117,6 +117,6 @@ turi atspausdinti 100 97 94 91 ir t.t.
 
 console.log(skai); // meta undefined, nes reiksmes dar nerado/ vykdo programa nuo virsaus i apacia
 
-var skai = 10;
+var skai = 10; // kintamasis jau yra, cia vykdo tik priskirima
 
 console.log(skai); // cia jau atspausdino 10, nes priskirtas var skai = 10
