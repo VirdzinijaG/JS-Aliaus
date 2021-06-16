@@ -90,8 +90,13 @@ console.log(kitas2);
 // tada vkdoma ketvirta dalis s padidinamas 1
 for (var s = 1; s < 4; s++){
     console.log(s);
-
 }
+
+// sis ciklas sussideda is keliu daliu 
+// pirma dalis s =1 
+// antra dalis s < 4 true arba false, jei true tada vykdys  trecia ir ketvirta dali
+// trecia dalis ciklo kunas console log
+// ketvirta dalis s++
 
 
 /* UZDUOTIS
