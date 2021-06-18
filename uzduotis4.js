@@ -57,18 +57,35 @@ console.log(vidurkis3);
 let bvidurkis = 0;
 let bsuma;
 bsuma = suma + suma1 + suma2 + suma3;
-console.log(bsuma);
+// console.log(bsuma);
 
-console.log(st[0].length);
-console.log(st[1].length);
-console.log(st[2].length);
-console.log(st[3].length);
+// console.log(st[0].length);
+// console.log(st[1].length);
+// console.log(st[2].length);
+// console.log(st[3].length);
 
 let lsuma;
 lsuma = st[0].length + st[1].length + st[2].length +st[3].length;
-console.log(lsuma);
+// console.log(lsuma);
 
 bvidurkis = bsuma / lsuma;
 console.log(bvidurkis);
+
+
+/* let m = [5, 87, -5, 3, -4]
+surusiuoti masyva didejimo tvarka ir atspausdinti
+surusiuoti masyva mazejima tvarka ir atspausdinti
+*/
+
+let m = [5, 87, -5, 3, -4,];
+
+// masyvas didejimo tvarka
+
+m.sort();
+console.log(m);
+
+// masyvas mazejimo tvarka
+m.reverse();
+console.log(m);
 
 
