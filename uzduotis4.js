@@ -89,3 +89,19 @@ m.reverse();
 console.log(m);
 
 
+// didejimo tvarka
+let len = m.length;
+
+for (let i = len-1; i>0; i--) {
+    for (let j = 1; j <=i; j++) {
+        if (m[j-1]>m[j]) {
+            let temp = m[j-1];
+            m[j-1] = m[j];
+            m[j] = temp;
+
+        }
+    }
+}
+console.log(m);
+
+// mazejimo tvarka
