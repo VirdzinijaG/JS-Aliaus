@@ -75,12 +75,15 @@ function didesnioSkaiciausKvadratas (a, b) {
 let dsk = didesnioSkaiciausKvadratas(5,3);
 console.log(dsk);
 
+
 let m1 = [1, 2, 3, 4, 5];
-let m2 = [65, 78, -2, 4, 7];
+let bubu = [65, 78, -2, 4, 7];
+let meme = [165, 8, 2, -4, 17];
+let oj = [65, 45, 11];
+let ah = [0.1, 0.2, -1.2];
 
 
-
-// didziausias skaicius masyve 
+// didziausias skaicius masyve, salyga nurodyta viename masyve
     let max = m1[0];
     for (let x = 1; x < m1.length; x++) {
         if (m1[x] > max) {
@@ -89,7 +92,7 @@ let m2 = [65, 78, -2, 4, 7];
     }
 console.log(max);
 
-// didziausias skaicius su funkcija masyvuose, viena funkcija tinkama keliems masyvams 
+// didziausias skaicius su funkcija masyvuose, viena funkcija tinkama keliems masyvams, isvedant console.log
 
 function didesnisSk (puokste) {
     let max = puokste[0];
@@ -101,6 +104,17 @@ function didesnisSk (puokste) {
 return max;
 }
 
-// kiekvieno masyvo atvaizdavime kvieciama funkcija, kuri parodo didziausia skaiciu 
+// kiekvieno masyvo atvaizdavime kvieciama funkcija, kuri parodo didziausia jo skaiciu 
 console.log(didesnisSk(m1));
-console.log(didesnisSk(m2));
+console.log(didesnisSk(bubu));
+console.log(didesnisSk(meme));
+console.log(didesnisSk(oj));
+console.log(didesnisSk(ah));
+
+/*  atspausdinti visu masyvu skaiciu vidurki 
+let m1 = [1, 2, 3, 4, 5];
+let bubu = [65, 78, -2, 4, 7];
+let meme = [165, 8, 2, -4, 17];
+let oj = [65, 45, 11];
+let ah = [0.1, 0.2, -1.2];
+*/
