@@ -13,6 +13,7 @@
 
 // kiekvienos eilutes elementu vidurkis
 
+// nurodytos salygos kiekvienai eilutei skirtingai
 let vidurkis = 0;
 let suma = 0;
 for (let i = 0; i < st[0].length; i++) {
@@ -45,6 +46,17 @@ for (let i = 0; i < st[3].length; i++) {
 } 
 console.log(vidurkis3);
 
+// kiekvienos eilutes elementu vidurkis
+
+for (let i = 0; i < st.length; i++) {
+    let suma = 0;
+    for (let j =0; j < st[i].length; j++) {
+        suma += st[i][j];
+    }
+    console.log("Eilutes vidurkis " + suma / st[i].length);
+}
+
+
 
 // bsuma = suma + suma1 + suma2 + suma3;
 // console.log(bsuma);
@@ -54,6 +66,7 @@ console.log(vidurkis3);
 
 // visu elementu vidurkis
 
+// salyga netinkama, jei atsirastu daugiau elementu
 let bvidurkis = 0;
 let bsuma;
 bsuma = suma + suma1 + suma2 + suma3;
@@ -71,6 +84,17 @@ lsuma = st[0].length + st[1].length + st[2].length +st[3].length;
 bvidurkis = bsuma / lsuma;
 console.log(bvidurkis);
 
+// visu elementu vidurkis
+let esuma = 0;
+let ekiekis = 0;
+
+for (let i =0; i < st.length; i++) {
+    ekiekis += st[i].length; 
+        for (let j = 0; j < st[i].length; j++) {
+            esuma += st[i][j];
+    }
+}
+console.log("Bendras vidurkis " + esuma / ekiekis);
 
 /* let m = [5, 87, -5, 3, -4]
 surusiuoti masyva didejimo tvarka ir atspausdinti
