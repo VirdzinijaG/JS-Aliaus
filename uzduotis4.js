@@ -114,18 +114,28 @@ console.log(m);
 
 
 // didejimo tvarka
-let len = m.length;
+let sk = m.length;
 
-for (let i = len-1; i>0; i--) {
+for (let i = sk-1; i>0; i--) {
     for (let j = 1; j <=i; j++) {
         if (m[j-1]>m[j]) {
-            let temp = m[j-1];
+            let t = m[j-1];
             m[j-1] = m[j];
-            m[j] = temp;
+            m[j] = t;
 
         }
     }
 }
-console.log(m);
+console.log("Didejimo tvarka " + m);
 
 // mazejimo tvarka
+
+for (let i = 0; i < m.length / 2; i++) {
+    let t = m[i];
+    m[i] = m[m.length - 1 -i];
+    m[m.length - 1 -i] = t;
+}
+
+console.log("Mazejimo tvarka " + m);
+
+
