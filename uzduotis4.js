@@ -96,12 +96,27 @@ for (let i =0; i < st.length; i++) {
 }
 console.log("Bendras vidurkis " + esuma / ekiekis);
 
+// parodytas per pamokas
+// visi vidurkiai vienoje salygoje
+let sumas = 0;
+let skKiekis = 0;
+for(let y = 0; y < st.length; y++) {
+let eilutesSuma = 0;
+for(let x = 0; x < st[y].length; x++) {
+eilutesSuma += st[y][x];
+sumas += st[y][x];
+}
+skKiekis += st[y].length;
+console.log(eilutesSuma / st[y].length);
+}
+console.log(sumas / skKiekis);
+
 /* let m = [5, 87, -5, 3, -4]
 surusiuoti masyva didejimo tvarka ir atspausdinti
 surusiuoti masyva mazejima tvarka ir atspausdinti
 */
 
-let m = [5, 87, -5, 3, -4,];
+let m = [5, 87, -5, 3, -4, 107];
 
 // masyvas didejimo tvarka
 
@@ -118,7 +133,7 @@ let sk = m.length;
 
 for (let i = sk-1; i>0; i--) {
     for (let j = 1; j <=i; j++) {
-        if (m[j-1]>m[j]) {
+        if (m[j-1]>m[j]) { 
             let t = m[j-1];
             m[j-1] = m[j];
             m[j] = t;
@@ -138,4 +153,30 @@ for (let i = 0; i < m.length / 2; i++) {
 
 console.log("Mazejimo tvarka " + m);
 
+// parodytas per pamoka
+// didejimo tvarka
 
+for (let i = 0; i < m.length - 1; i++) {
+    for (let j = i + 1; j < m.length; j++) {
+        if (m[i] > m[j]) {
+            let tmp = m[i]; // kintamuju apkeitimas vietomis
+            m[i] = m[j];
+            m[j] = tmp;
+        }
+    }
+}
+console.log(m);
+
+// parodytas per pamoka
+// mazejimo tvarka
+
+for (let i = 0; i < m.length - 1; i++) {
+    for (let j = i + 1; j < m.length; j++) {
+        if (m[i] < m[j]) { // pakeista > i < ir gaunasi mazejimo tvarka
+            let tmp = m[i]; // kintamuju apkeitimas vietomis
+            m[i] = m[j];
+            m[j] = tmp;
+        }
+    }
+}
+console.log(m);
