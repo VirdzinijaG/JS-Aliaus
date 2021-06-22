@@ -60,6 +60,24 @@ console.log(vidurkis(oj));
 console.log(vidurkis(ah)); 
 
 
+// Masyvo vidurkiai parodyta pamokoje
+function vidurkis(masyvoVidurkis){
+  let suma = 0;
+  let vid = 0;
+for (let i = 0; i < masyvoVidurkis.length; i++) {
+    suma = suma + masyvoVidurkis[i];
+    } 
+    vid = suma / masyvoVidurkis.length; // vidurkis apskaiciuojamas kai gaunama visa suma
+return vid;
+}
+console.log(vidurkis(m1));
+console.log(vidurkis(bubu));
+console.log(vidurkis(meme));
+console.log(vidurkis(oj));
+console.log(vidurkis(ah)); 
+
+
+
 // pakeisti reiksmes i
 // pirma eilute 1, 2, 3, 4, 5
 // antra eilute 2, 3, 4, 5, 1
