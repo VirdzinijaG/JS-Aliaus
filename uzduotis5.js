@@ -76,5 +76,30 @@ let rez = [
 [0, 0, 0, 0, 0],
 ]; 
 
+for (let y = 0; y < rez.length; y++) {
+  for (let x = 0; x < rez[y].length; x++) {
+    rez[y][x] = m[(x + y) % m.length]
+  }
+}
+// y: 0
+// y < 5  true
+// x: 0
+// x < 5
+// rez 0 0 
+// m 0 
+console.log(rez);
 
 
+// pakeisti reiksmes i 
+// 1 2 3 4 5
+// 5 1 2 3 4
+// 4 5 1 2 3
+// 3 4 5 1 2 
+// 2 3 4 5 1
+
+for (let y = 0; y < rez.length; y++) {
+  for (let x = 0; x < rez[y].length; x++) {
+    rez[y][(x + y) % m.length] = m[x]
+  }
+}
+console.log(rez);
