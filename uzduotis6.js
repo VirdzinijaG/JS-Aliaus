@@ -22,22 +22,22 @@ jei nieko nepaduota - spausdina: labas nezinomas zmogaus
  */
 
 
-// Finonacci skaiciu sekos spausdinimas 
+// Fibonacci skaiciu sekos spausdinimas iki nurodytos reiksmes
 
-// function fib (sk1, sk2, max) {
-// //    if (sk1 === 0) {
-// //        return 1;
-// //    }
-// //    if (sk2 < sk1) {
-// //        return sk2;
-// // }
-// if (fib[sk1 -1] + fib[sk2 - 2] <= max){
-//     return (fib[sk1 -1] + fib[sk2 - 2]), sk1++, sk2++;
-// }
-// return fib(sk1 - 1) + fib(sk2 - 2);
-// }
+function fib (sk1, sk2, max) {
+    console.log(sk1);
+    console.log(sk2);
+    for (let i = 0; i < max; i++) { 
+        let temp = sk1 + sk2;
+        console.log(temp);
+        sk1 = sk2;
+        sk2 = temp;
+    }
+}
+console.log(fib(1, 1, 20));
 
-// console.log(fib(1, 1, 1000));
+// Parodytas per pamoka
+
 
 
 //  Parasyti funkcija labas(vardas, pavarde)
@@ -59,3 +59,18 @@ function labas(vardas, pavarde) {
 labas("Jonas", "Jonaitis");
 labas("Petras");
 labas();
+
+// Parodytas per pamoka
+function labas1(vardas, pavarde) {
+    if (vardas !== undefined && pavarde !== undefined) {
+    console.log("Labas, " + vardas + " " + pavarde);
+}
+    else if (vardas !== undefined) {
+        console.log("Labas, " + vardas);
+    }
+   else
+        console.log("Labas, nezinomas zmogau");
+}
+labas1("Antanas", "Antanaitis");
+labas1("Ona");
+labas1();
