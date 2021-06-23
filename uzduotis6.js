@@ -37,8 +37,17 @@ function fib (sk1, sk2, max) {
 console.log(fib(1, 1, 20));
 
 // Parodytas per pamoka
+function fib1 (sk1, sk2, max) {
+    console.log(sk1);
+    let next = sk1 +sk2;
+    if (next < max) {
+        fib1(sk2,next, max)
+    } else {
+        console.log(sk2);
+    }
 
-
+}
+console.log(fib1(1, 1, 1000));
 
 //  Parasyti funkcija labas(vardas, pavarde)
 // jei paduotas ir vardas ir pavarde - spausdina: labas vardas pavarde
