@@ -29,7 +29,7 @@ let m = [
    for (let i = 0; i < m.length; i++) {
        for (let j = 0; j < m[i].length; j++ ) {
            for (let k = 0; k < m[i][j].length; k++) {
-            if (((m[i][j][k]) % 2) == 0) {
+            if (((m[i][j][k]) % 2) !== 0) {
                 suma += m[i][j][k];
                 skKiekis += 1
             }
