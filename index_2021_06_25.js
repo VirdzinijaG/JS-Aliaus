@@ -123,7 +123,7 @@ console.log(suma2(1, 2, "labas"));
 console.log(suma2(1, 2, 3, 4));
 console.log(suma2(1, 2, 3, 4, 5, 6, 7, 8, 9, "dhjshhdhs", false));
 
-function pasisveikinimas (vardas, pavarde) {
+function pasisveikinimas (vardas = "bevardis", pavarde = "bepavardis") { // bevardis, bepavardis yra default reiksme, kai yra undefined
     console.log(arguments); // arguments kintamasis delioja kaip masyva
    let str = "labas " + vardas + " " + pavarde;
    if (arguments.length > 2) {
@@ -138,4 +138,71 @@ function pasisveikinimas (vardas, pavarde) {
 pasisveikinimas("Jonas", "Jonaitis");
 pasisveikinimas("Jonas", "Jonaitis", "Imperatorius") // arguments delioja kaip masyva
 pasisveikinimas("Jonas", "Jonaitis", "Imperatorius", "Kaune");
-pasisveikinimas("Jonas", "Jonaitis", "Imperatorius", "Caras", "Valdovas")
+pasisveikinimas("Jonas", "Jonaitis", "Imperatorius", "Caras", "Valdovas");
+pasisveikinimas("Jonas", undefined, "Imperatorius", "Caras", "Valdovas");
+pasisveikinimas(undefined, undefined, "Imperatorius", "Caras", "Valdovas");
+
+
+function pasisveikinimas1(zmogus) {
+    console.log("Labas " + zmogus.vardas + " " + zmogus.pavarde);
+    zmogus.jauPasveikintas = true;
+}
+
+let z = {
+    vardas: "Jonas1",
+    pavarde: "Jonaitis1"
+}
+pasisveikinimas1(z)
+console.log(z);
+
+// pasisveikinimas1({
+//   vardas: "Jonas",
+//   pavarde: "Jonaitis"
+// })
+// pasisveikinimas1(zmogus)
+
+function skaicia(sk) {
+    sk = sk * sk;
+    console.log(sk);
+}
+let s = 10;
+skaicia(s);
+console.log(s);
+
+/* Yra 8 masinos
+su savybemis :
+ pavadinimas
+  greitis: 0
+   kelias: 0
+
+   masinos lenktiniauja (ciklas)
+
+   kiekvienos iteracijos metu: visos masinos gali pakeisti savo greiti 
+   random skaicius 
+   jei random < 0.2 - masina stabdo (t.y mazeja masinos greitis nuo 1...iki 5 (random))
+   jei random < 0.7 - masina gazuoja (t.y masinos greitis 1....10 (random))
+   priesingu atveju masinos greitis nesikeicia
+
+   visos masinos pavaziuoja: per tiek, koks yra jos greitis
+
+   lenktynes baigiasi, kai bent viena masina nuvaziuoja 1000km
+
+   reikia surusiuoti masinas pagal nuvaziuota kelia
+    jei dvieju masinu kelias vienodas - pirmesne yra ta, kurios didesnis greitis
+
+    atspausdinti turnyrine lentele
+
+** kas 100 km spausdinti lyderi
+
+    */
+
+let atsitiktinis = Math.random();
+// sita funkcija grazina skaicius tarp 0 ir 1
+//[0....1]
+
+console.log(atsitiktinis);
+
+let sveikasAts = Math.floor(Math.random() * 5 + 1); // math.floor padaro skaiciu be kablelio 
+//[1....5.999999999]
+
+console.log(sveikasAts);
