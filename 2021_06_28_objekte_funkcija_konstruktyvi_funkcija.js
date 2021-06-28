@@ -65,3 +65,23 @@ masina4.gazas(3);
 console.log(masina3);
 console.log(masina4);
 
+// Prototype
+
+console.log(Masina.prototype);
+
+Masina.prototype.gazas = function(kiek) {
+    this.greitis += kiek;
+}
+
+Masina.prototype.stabdis = function(kiek) {
+    this.greitis -= kiek;
+    if (this.greitis < 0) {
+        this.greitis = 0;
+    }
+} // taip parasius galima istrinti is function Masina savybes gazas ir stabdis
+
+
+
+console.log(Masina.prototype);
+console.log(masina3);
+console.log(masina4);
