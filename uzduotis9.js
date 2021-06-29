@@ -117,3 +117,4 @@ function Puodelis1 (spalva, maxTuris) {
    puodelis1.isgerti(100);
    puodelis1.isgerti(555);
    puodelis1.isgerti(100);
+   console.log(puodelis1);
