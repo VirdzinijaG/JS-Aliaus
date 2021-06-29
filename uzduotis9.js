@@ -63,3 +63,57 @@ console.log(puodukas3);
 
 puodukas3.isgerk(100);
 console.log(puodukas3);
+
+
+
+// Parodytas per pamoka 
+
+function Puodelis1 (spalva, maxTuris) {
+    this.spalva = spalva;
+    this.kiekis = 0;
+    this.maxTuris = maxTuris;
+   }
+    
+   Puodelis1.prototype.ipilk = function (kiek) {
+    if (kiek <= 0) {
+    console.log("Ar zinai, ka darai?");
+    return;
+    }
+    this.kiekis += kiek;
+    if (this.kiekis > this.maxTuris) {
+    console.log("Ant kelniu issipyle " + (this.kiekis - this.maxTuris));
+    this.kiekis = this.maxTuris;
+    } else {
+    console.log("Sekmingai ipylem " + kiek + ". Liko laisvos vietos: " + (this.maxTuris - this.kiekis));
+    }
+   }
+    
+   Puodelis1.prototype.isgerk = function (kiek) {
+    if (kiek < 0) {
+    console.log("Nespjaudyk i puoduka");
+    return;
+    }
+    if (kiek === 0) {
+    console.log("Tai gersim, ar akis vartysim?");
+    return;
+    }
+    this.kiekis -= kiek;
+    if (this.kiekis < 0) {
+    console.log("Isgerem tik " + (this.kiekis + kiek));
+    this.kiekis = 0;
+    } else {
+    console.log("Sekmingai isgerem " + kiek + ". Liko gerimo: " + this.kiekis);
+    }
+   }
+    
+   const puodelis1 = new Puodelis1("Geltonas", 300);
+   const puodelis2 = new Puodelis1("Baltas", 200);
+    
+   puodelis1.ipilk(250);
+   puodelis1.ipilk(250);
+   puodelis1.ipilk(-10);
+   puodelis1.isgerk(-10);
+   puodelis1.isgerk(0);
+   puodelis1.isgerk(100);
+   puodelis1.isgerk(555);
+   puodelis1.isgerk(100);
