@@ -74,7 +74,7 @@ function Puodelis1 (spalva, maxTuris) {
     this.maxTuris = maxTuris;
    }
     
-   Puodelis1.prototype.ipilk = function (kiek) {
+   Puodelis1.prototype.ipilti = function (kiek) {
     if (kiek <= 0) {
     console.log("Ar zinai, ka darai?");
     return;
@@ -88,7 +88,7 @@ function Puodelis1 (spalva, maxTuris) {
     }
    }
     
-   Puodelis1.prototype.isgerk = function (kiek) {
+   Puodelis1.prototype.isgerti = function (kiek) {
     if (kiek < 0) {
     console.log("Nespjaudyk i puoduka");
     return;
@@ -109,11 +109,11 @@ function Puodelis1 (spalva, maxTuris) {
    const puodelis1 = new Puodelis1("Geltonas", 300);
    const puodelis2 = new Puodelis1("Baltas", 200);
     
-   puodelis1.ipilk(250);
-   puodelis1.ipilk(250);
-   puodelis1.ipilk(-10);
-   puodelis1.isgerk(-10);
-   puodelis1.isgerk(0);
-   puodelis1.isgerk(100);
-   puodelis1.isgerk(555);
-   puodelis1.isgerk(100);
+   puodelis1.ipilti(250);
+   puodelis1.ipilti(250);
+   puodelis1.ipilti(-10);
+   puodelis1.isgerti(-10);
+   puodelis1.isgerti(0);
+   puodelis1.isgerti(100);
+   puodelis1.isgerti(555);
+   puodelis1.isgerti(100);
