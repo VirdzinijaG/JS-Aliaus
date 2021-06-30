@@ -69,9 +69,24 @@ ipilk(kiek) {
 }
 }
 
+// viena klase gali paveldeti tik nuo vienos klases, tevine klase tik viena
+// bet vaikiniu (paveldejanciu) klasiu gali buti daug
+
+class stikline extends Puodukas {
+    constructor(spalva, maxTuris) {
+        super(spalva, maxTuris);
+    }
+
+    isgerk(kiek) {
+        console.log("FUJ - nesvari stikline!");
+    }
+}
+
 
 let p1 = new Puodukas ("Baltas", 150);
-let t = new Termosas ("Zalias", 1000)
+let t = new Termosas ("Zalias", 1000);
+
+let s = new stikline ("Melynas", 1000)
 
 t.ipilk(550)
 t.isgerk(60)
@@ -80,3 +95,37 @@ console.log(t);
 p1.ipilk(50)
 console.log(p1);
 
+s.isgerk(200)
+console.log(s);
+
+
+
+// operatorius instanceof tikrina kuriam objektui priklauso
+
+let o = p1; // o lygus puodukui, sukuriammas naujas puodukas
+
+if ( o instanceof Puodukas) { // vykdys ipilk, nes o yra priskirtas puodukui
+    o.ipilk(12);
+    if (o instanceof Termosas) { 
+        o.pasildyk(23)
+    }
+} 
+
+console.log(o);
+
+let o1 = t; // o1 lygus termosui, sukuriamas naujas termosas
+
+if ( o1 instanceof Puodukas) { // vykdys abu, nes o1 yra abu objektai, del paveldejimo
+    o1.ipilk(12);
+    if (o1 instanceof Termosas) {
+        o1.pasildyk(23)
+    }
+} 
+
+console.log(o1);
+
+if (o instanceof Object) { // tikrinama ar tai yra objektas
+    console.log("o - Tai objektas");
+}
+
+// let o = Object.create(null);  // sukuriamas objektas, kuris neturi savo prototipo, objektas, kuris nera objektas
