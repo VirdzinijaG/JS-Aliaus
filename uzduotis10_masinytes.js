@@ -1,5 +1,19 @@
 "use strict"
 
+
+/*  Uzduoties papildymas 
+dvi masinos turi buti sportines
+
+sportine masina turi tureti spoileri (pradzioj nuleistas)
+
+jei spoileris yra pakeltas - sportine masina stabdo 2x greiciau (gazuoja standartiskai)
+jei spoileris yra nuleistas - sportine masina gazuoja 2x greiciau (stabdo standartiskai)
+
+lenktyniu metu kieviena sportine masina su 50% tikimybe pakeicia spoilerio pozicija
+
+*/
+
+
 // 8 uzduoties pakeitimas
 // masininos aprasomos su class 
 
@@ -41,6 +55,7 @@ class Masina {
 class SportineMasina extends Masina { // paveldimumas is tevines klases
     constructor(pavadinimas) {
         super(pavadinimas);
+        this.spoileris = false;
     }
 
     gazas(kiek) {
@@ -56,7 +71,7 @@ const masinos = [
     new Masina("kevirta"),
     new Masina("penkta"),
     new Masina("sesta"),
-    new Masina("septinta"),
+    new SportineMasina("septinta"),
     new SportineMasina("astunta")
 ];
 
@@ -65,7 +80,6 @@ let lyderis;
 do {
     // keiciam greiti ir vaziuojam
     for (let i = 0; i < masinos.length; i++) {
-        // 
         let keiciamGreiti = Math.random();
         if (keiciamGreiti < 0.2) {
             masinos[i].stabdis(Math.floor(Math.random() * 5 + 1));
