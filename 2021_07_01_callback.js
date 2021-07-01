@@ -35,3 +35,15 @@ setTimeout (test3, 10);
 
 console.log("Pabaiga");
 
+
+
+// node.js moka perskaityti failus is failines sistemos txt
+const fs = require ("fs"); 
+
+function perskaiciau (err, data) {
+    console.log(" " + data); // atspausdina tai ka perskaite
+}
+
+fs.readFile("a.txt", perskaiciau); // node.js funkcionalumas
+fs.readFile("b.txt", perskaiciau)
+// readFile - failo skaitymas
