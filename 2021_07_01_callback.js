@@ -45,5 +45,33 @@ function perskaiciau (err, data) {
 }
 
 fs.readFile("a.txt", perskaiciau); // node.js funkcionalumas
-fs.readFile("b.txt", perskaiciau)
+fs.readFile("b.txt", perskaiciau);
+fs.readFile("c.txt",perskaiciau)
 // readFile - failo skaitymas
+
+// kad a.txt b.txt ir c.txt skaitytu ir atspausdintu is eiles rasoma:
+
+/* fs.readFile("a.txt", (err, data) => {
+    console.log(" " + data);
+        fs.readFile("b.txt", (err, data) => {
+        console.log(" " + data);
+            fs.readFile("c.txt", (err, data) => {
+            console.log(" " + data);
+            }; 
+    }; 
+}; 
+*/
+
+// Taip uzrasius spausdins eiles tvarka, nes pradzioje ivykdis viena komanda, po to eis prie sekancios 
+
+/*  fs.readFile("a.txt", (err, data) => {
+    data = " " + data;
+        fs.readFile("b.txt", (err, data) => {
+        data = " " + data;
+            fs.readFile("c.txt", (err, data) => {
+            data = " " + data;
+            }; 
+    }; 
+}; 
+*/
+// Taip gaunamas tekstas, kuri perskaite is failo 
